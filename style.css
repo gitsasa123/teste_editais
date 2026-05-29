@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("img.jpg") no-repeat center center/cover;
+    position: relative;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+/* camada escura */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(3px);
+}
+
+.login-container {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 550px;
+
+    padding: 40px;
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+
+    color: white;
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.login-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ddd;
+    font-size: 0.95rem;
+}
+
+/* BOTÕES RADIO */
+.btn-group {
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+    
+}
+
+
+.btn-group label {
+    flex: 1;
+}
+
+/* INPUTS */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    font-size: 1rem;
+}
+
+.input-group input::placeholder {
+    color: #ddd;
+}
+
+/* ÁREA DOS BOTÕES */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.login-ent,
+.login-cad,
+.login-sobre {
+    flex: 1;
+    padding: 14px;
+    border-radius: 100px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.login-ent {
+    background: #2e7d32;
+}
+
+.login-cad {
+    background: #0e28cf;
+}
+.login-sobre
+{
+    background-color: rgba(0, 255, 255, 0.037);
+    width: 30px;
+    height: 8px;
+    margin-top: 20px;
+    margin-left: 220px;
+    background: url("gr.png") no-repeat center center/cover;
+}
+
+.login-ent:hover,
+.login-cad:hover,
+.login-sobre:hover {
+    transform: translateY(-2px);
+}
+
+/* EXTRA */
+.extra {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.extra a {
+    color: #90ee90;
+    text-decoration: none;
+}
+
+.extra a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+
+    .login-container {
+        padding: 25px;
+    }
+
+    .login-container h1 {
+        font-size: 1.6rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+    #group
+    {
+        margin-left: 500px;
+        
+    }
+    
+}

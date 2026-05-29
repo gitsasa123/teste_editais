@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("img.jpg") no-repeat center center/cover;
+    position: relative;
+    overflow-x: hidden;
+    padding: 20px;
+}
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(3px);
+}
+
+#prog
+{
+    margin-bottom: 15px;
+    width: 200px;
+     background-color: rgba(112, 154, 244, 0.456);
+}
+
+.login-container {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 900px;
+
+    padding: 40px;
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.479);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+
+    color: white;
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: black;
+}
+
+.login-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+    font-size: 0.95rem;
+}
+
+#Voltar
+{
+    margin-left: 550px;
+}

@@ -1,0 +1,388 @@
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background-color: #d8d8d8;
+    }
+
+    .container-fluid{
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* SIDEBAR */
+    .sidebar{
+      width: 300px;
+      background-color: #3d3d3d;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 20px;
+      position: fixed;
+    left: 0;
+  height: 100%;
+    }
+
+    .logo{
+      margin-bottom: 40px;
+    }
+
+    .logo h5{
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .menu{
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .menu li{
+      margin: 18px 0;
+    }
+
+    .menu a{
+      text-decoration: none;
+      color: #d8d8d8;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .menu a:hover{
+      color: white;
+    }
+
+    .menu i{
+      margin-right: 10px;
+    }
+
+    #logout-btn{
+      width: 220px;
+      text-align: left;
+    }
+
+
+    /* CONTEÚDO */
+    .content{
+      background-color: #d8d8d8;
+      padding: 30px;
+      overflow-y: auto;
+      margin-left: 300px;
+    }
+
+    .top-area{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .title h1{
+      font-size: 40px;
+      font-weight: bold;
+      color: #3b3b3b;
+      margin-bottom: 0;
+    }
+
+    .title p{
+      color: #666;
+      margin-top: 5px;
+    }
+
+    .search-area{
+      display: flex;
+      gap: 10px;
+    }
+
+    .search-area input,
+    .search-area select{
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    /* CARDS */
+    .card-edital{
+      background-color: white;
+      border-radius: 12px;
+      padding: 18px;
+      border-top: 5px solid #0f4f9d;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: 0.3s;
+      height: 100%;
+    }
+
+    .card-edital:hover{
+      transform: translateY(-4px);
+    }
+
+    .card-edital h2{
+      font-size: 30px;
+      font-weight: bold;
+      color: #3b3b3b;
+      margin-bottom: 5px;
+    }
+
+    .card-edital h5{
+      font-size: 14px;
+      font-weight: bold;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .data{
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .descricao{
+      font-size: 13px;
+      color: #666;
+      line-height: 1.4;
+      margin-bottom: 18px;
+    }
+
+    .btn-inscricao{
+      background-color: #0f4f9d;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 8px 18px;
+      font-size: 13px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-inscricao:hover{
+      background-color: #0f4f9d00;
+      color: #0f4f9d;
+      border: solid 1px #0f4f9d;
+    }
+
+/*footer*/
+.footer-contato{
+  background-color: #0f4f9d;
+  color: white;
+  margin-left: 300px;
+  padding: 70px 50px 30px;
+}
+
+.footer-title{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.footer-title1{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 35px;
+  margin-left: 51px;
+}
+
+.contato-item{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  font-size: 17px;
+}
+
+.contato-item a{
+  font-size: 20px;
+}
+
+.social-icons{
+  display: flex;
+  gap: 35px;
+  margin-top: 45px;
+ margin-left: 51px;
+}
+
+.ins
+{
+    width: 30px;
+    height: 30px;
+    background: url("ins.png") no-repeat center center/cover;
+    border: none;
+}
+
+.you
+{
+    width: 30px;
+    height: 30px;
+    background: url("you.png") no-repeat center center/cover;
+    border: none;
+}
+
+.face
+{
+    width: 30px;
+    height: 30px;
+    background: url("face.png") no-repeat center center/cover;
+    border: none;
+}
+
+.social-icons i{
+  font-size: 55px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.social-icons i:hover{
+  transform: scale(1.1);
+}
+
+.footer-bottom{
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 15px;
+
+}
+
+    /* =========================================
+RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 991px){
+
+  .container-fluid{
+    height: auto;
+    overflow: visible;
+    padding: 0;
+  }
+
+  .main-layout{
+    flex-direction: column;
+  }
+
+  /* SIDEBAR */
+  .sidebar{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  #logout-btn{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* CONTEÚDO */
+  .content{
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .top-area{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title h1{
+    font-size: 28px;
+  }
+
+  .title p{
+    font-size: 14px;
+  }
+
+  /* BUSCA */
+  .search-area{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .search-area input,
+  .search-area select{
+    width: 100%;
+  }
+
+  /* CARDS */
+  .card-edital h2{
+    font-size: 24px;
+  }
+
+  .btn-inscricao{
+    width: 100%;
+    text-align: center;
+  }
+
+  /* FOOTER */
+  .footer-contato{
+    margin-left: 0;
+    padding: 50px 20px 20px;
+  }
+
+  .footer-title,
+  .footer-title1{
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  .social-icons{
+    margin-left: 0;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-bottom{
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .contato-item{
+    font-size: 15px;
+    align-items: flex-start;
+  }
+}
+
+/* CELULARES PEQUENOS */
+@media (max-width: 576px){
+
+  .content{
+    padding: 15px;
+  }
+
+  .title h1{
+    font-size: 22px;
+  }
+
+  .card-edital{
+    padding: 15px;
+  }
+
+  .card-edital h2{
+    font-size: 20px;
+  }
+
+  .card-edital h5{
+    font-size: 13px;
+  }
+
+  .descricao{
+    font-size: 12px;
+  }
+
+  .btn-inscricao{
+    font-size: 12px;
+    padding: 10px;
+  }
+}

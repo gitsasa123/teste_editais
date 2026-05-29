@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image" href="group.png">
+  <title>Sobre Nós</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    .sobre{
+      width: 100%;
+      padding: 60px 8%;
+    }
+
+    .titulo{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .titulo h1{
+      font-size: 42px;
+      color: #1d3557;
+      margin-bottom: 10px;
+    }
+
+    .titulo p{
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .categorias{
+      margin-top: 50px;
+    }
+
+    .categoria{
+      margin-bottom: 50px;
+    }
+
+    .categoria h2{
+      font-size: 28px;
+      color: #1d3557;
+      margin-bottom: 25px;
+      border-left: 6px solid #457b9d;
+      padding-left: 15px;
+    }
+
+    .membros{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card{
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover{
+      transform: translateY(-5px);
+    }
+
+    .foto{
+      width: 120px;
+      height: 120px;
+      margin: auto;
+      border-radius: 50%;
+      background: #d9d9d9;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .foto img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card h3{
+      color: #1d3557;
+      margin-bottom: 8px;
+      font-size: 22px;
+    }
+
+    .cargo{
+      color: #457b9d;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .descricao{
+      font-size: 15px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    @media(max-width: 768px){
+
+      .titulo h1{
+        font-size: 32px;
+      }
+
+      .titulo p{
+        font-size: 16px;
+      }
+
+      .categoria h2{
+        font-size: 24px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="sobre">
+
+    <div class="titulo">
+      <h1>Sobre Nossa Equipe</h1>
+
+      <p>
+        Somos uma equipe de desenvolvedores dedicada à criação de uma plataforma
+        de cadastro para editais, buscando oferecer uma experiência moderna,
+        eficiente e acessível para os usuários. Nosso objetivo é unir tecnologia,
+        organização e inovação em um único sistema.
+      </p>
+    </div>
+
+    <div class="categorias">
+
+      <!-- ANALISTAS -->
+      <div class="categoria">
+        <h2>Analistas de Dados</h2>
+
+        <div class="membros">
+
+          <div class="card">
+            <div class="foto">
+              <!-- FOTO -->
+              <!-- <img src="img/membro1.jpg"> -->
+            </div>
+
+            <h3>Nome do Membro</h3>
+            <p class="cargo">Analista de Dados</p>
+
+            <p class="descricao">
+              Responsável pela organização e interpretação de dados do sistema,
+              auxiliando na geração de informações estratégicas.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="foto"></div>
+
+            <h3>Nome do Membro</h3>
+            <p class="cargo">Analista de Dados</p>
+
+            <p class="descricao">
+              Atua na análise de métricas e melhoria contínua dos processos
+              relacionados ao projeto.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="foto"></div>
+
+            <h3>Nome do Membro</h3>
+            <p class="cargo">Analista de Dados</p>
+
+            <p class="descricao">
+              Desenvolve relatórios e contribui para tomadas de decisão baseadas
+              em dados.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FRONT-END -->
+      <div class="categoria">
+        <h2>Desenvolvedores Front-End</h2>
+
+        <div class="membros">
+
+          <div class="card">
+            <div class="foto"></div>
+
+            <h3>Nome do Membro</h3>
+            <p class="cargo">Front-End</p>
+
+            <p class="descricao">
+              Responsável pela criação de interfaces modernas, intuitivas e
+              responsivas para os usuários.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="foto"></div>
+
+            <h3>Nome do Membro</h3>
+            <p class="cargo">Front-End</p>
+
+            <p class="descricao">
+              Atua no desenvolvimento visual e na experiência do usuário dentro
+              da plataforma.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="foto"></div>
+
+            <h3>Nome do Membro</h3>
+            <p class="cargo">Front-End</p>
+
+            <p class="descricao">
+              Desenvolve componentes e garante a adaptação do sistema em
+              diferentes dispositivos.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BACK-END -->
+      <div class="categoria">
+        <h2>Desenvolvedores Back-End</h2>
+
+        <div class="membros">
+
+          <div class="card">
+            <div class="foto"></div>
+
+            <h3>Nome do Membro</h3>
+            <p class="cargo">Back-End</p>
+
+            <p class="descricao">
+              Responsável pela lógica do sistema, banco de dados e integração
+              entre os serviços da aplicação.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="foto"></div>
+
+            <h3>Nome do Membro</h3>
+            <p class="cargo">Back-End</p>
+
+            <p class="descricao">
+              Atua na segurança, desempenho e funcionamento interno da plataforma.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="foto"></div>
+
+            <h3>Nome do Membro</h3>
+            <p class="cargo">Back-End</p>
+
+            <p class="descricao">
+              Desenvolve APIs e implementa funcionalidades essenciais do projeto.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SCRUM MASTER -->
+      <div class="categoria">
+        <h2>Scrum Master</h2>
+
+        <div class="membros">
+
+          <div class="card">
+            <div class="foto"></div>
+
+            <h3>Nome do Membro</h3>
+            <p class="cargo">Scrum Master</p>
+
+            <p class="descricao">
+              Responsável pela organização da equipe, acompanhamento das tarefas
+              e aplicação das metodologias ágeis.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- FULL STACK -->
+      <div class="categoria">
+        <h2>Desenvolvedores Full Stack</h2>
+
+        <div class="membros">
+
+          <div class="card">
+            <div class="foto"></div>
+
+            <h3>Nome do Membro</h3>
+            <p class="cargo">Full Stack</p>
+
+            <p class="descricao">
+              Atua tanto no desenvolvimento visual quanto na lógica e estrutura
+              interna do sistema.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="foto"></div>
+
+            <h3>Nome do Membro</h3>
+            <p class="cargo">Full Stack</p>
+
+            <p class="descricao">
+              Contribui para integração completa entre front-end, back-end e banco
+              de dados.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>

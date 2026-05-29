@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image" href="icon.png">
+  <link rel="stylesheet" href="maincss.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Editais</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="d-flex main-layout h-100">
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div>
+
+          <div class="logo">
+            <img
+              src="icon.png"
+              width="45"
+            />
+            <h5>INSTITUTO FEDERAL</h5>
+          </div>
+
+          
+
+          <ul class="menu">
+            <li>
+              <a href="#">
+                 <button type="button" class="btn" data-bs-toggle="button" onclick="mostrarConteudo('inicio')">Inicio</button>
+              </a>
+            </li>
+
+            <li>
+              <a href="per.html">
+               <button type="button" class="btn" data-bs-toggle="button">Meu Perfil</button>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+           <button type="button" class="btn" data-bs-toggle="button">Minhas Inscrições</button>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <a href="index.html">
+        <button type="button" class="btn btn-outline-danger" id="logout-btn">
+          <i class="bi bi-box-arrow-left"></i>
+          Sair
+        </button>
+        </a>
+      </aside>
+
+      <!-- CONTEÚDO -->
+       <section id="inicio" class="conteudo-secao ativo">
+      <main class="content flex-grow-1">
+<section id="inicio" class="conteudo-secao ativo">
+        <div class="top-area">
+
+          <div class="title">
+            <h1>MURAL DE EDITAIS</h1>
+            <p>Acesse os editais disponíveis e faça sua inscrição</p>
+          </div>
+
+          <div class="search-area">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Buscar Editais..."
+            >
+
+            <select class="form-select">
+              <option>Filtros</option>
+              <option>Docente</option>
+              <option>Técnico</option>
+              <option>Aluno</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- GRID -->
+        <div class="row g-4">
+
+          <!-- CARD -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-edital">
+              <h2>EDITAL 01/2026</h2>
+              <h5>CHAMADA PÚBLICA - DOCENTE</h5>
+
+              <div class="data">
+                <i class="bi bi-calendar-event"></i>
+                Data Limite: 20/08/2026
+              </div>
+
+              <p class="descricao">
+                Resumo da vaga, resumo vaga resumo vaga,
+                resumo vaga, resumo vaga.
+              </p>
+
+              <button class="btn-inscricao">
+                <i class="bi bi-plus-circle-fill"></i>
+                REALIZAR INSCRIÇÃO
+              </button>
+            </div>
+          </div>
+
+          <!-- REPETIÇÃO DOS CARDS -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-edital">
+              <h2>EDITAL 01/2026</h2>
+              <h5>CHAMADA PÚBLICA - DOCENTE</h5>
+
+              <div class="data">
+                <i class="bi bi-calendar-event"></i>
+                Data Limite: 20/08/2026
+              </div>
+
+              <p class="descricao">
+                Resumo da vaga, resumo vaga resumo vaga,
+                resumo vaga, resumo vaga.
+              </p>
+
+              <button class="btn-inscricao">
+                <i class="bi bi-plus-circle-fill"></i>
+                REALIZAR INSCRIÇÃO
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card-edital">
+              <h2>EDITAL 01/2026</h2>
+              <h5>CHAMADA PÚBLICA - DOCENTE</h5>
+
+              <div class="data">
+                <i class="bi bi-calendar-event"></i>
+                Data Limite: 20/08/2026
+              </div>
+
+              <p class="descricao">
+                Resumo da vaga, resumo vaga resumo vaga,
+                resumo vaga, resumo vaga.
+              </p>
+
+              <button class="btn-inscricao">
+                <i class="bi bi-plus-circle-fill"></i>
+                REALIZAR INSCRIÇÃO
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card-edital">
+              <h2>EDITAL 01/2026</h2>
+              <h5>CHAMADA PÚBLICA - DOCENTE</h5>
+
+              <div class="data">
+                <i class="bi bi-calendar-event"></i>
+                Data Limite: 20/08/2026
+              </div>
+
+              <p class="descricao">
+                Resumo da vaga, resumo vaga resumo vaga,
+                resumo vaga, resumo vaga.
+              </p>
+
+              <button class="btn-inscricao">
+                <i class="bi bi-plus-circle-fill"></i>
+                REALIZAR INSCRIÇÃO
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card-edital">
+              <h2>EDITAL 01/2026</h2>
+              <h5>CHAMADA PÚBLICA - DOCENTE</h5>
+
+              <div class="data">
+                <i class="bi bi-calendar-event"></i>
+                Data Limite: 20/08/2026
+              </div>
+
+              <p class="descricao">
+                Resumo da vaga, resumo vaga resumo vaga,
+                resumo vaga, resumo vaga.
+              </p>
+
+              <button class="btn-inscricao">
+                <i class="bi bi-plus-circle-fill"></i>
+                REALIZAR INSCRIÇÃO
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card-edital">
+              <h2>EDITAL 01/2026</h2>
+              <h5>CHAMADA PÚBLICA - DOCENTE</h5>
+
+              <div class="data">
+                <i class="bi bi-calendar-event"></i>
+                Data Limite: 20/08/2026
+              </div>
+
+              <p class="descricao">
+                Resumo da vaga, resumo vaga resumo vaga,
+                resumo vaga, resumo vaga.
+              </p>
+
+              <button class="btn-inscricao">
+                <i class="bi bi-plus-circle-fill"></i>
+                REALIZAR INSCRIÇÃO
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+  </div>
+<!-- =========================
+CONTATO / RODAPÉ
+========================= -->
+
+<footer class="footer-contato">
+
+  <div class="container-fluid">
+
+    <div class="row gy-5">
+
+      <!-- CONTATO -->
+      <div class="col-lg-5">
+
+        <h2 class="footer-title">
+          Entre em contato!
+        </h2>
+
+        <div class="contato-item">
+          <i class="bi bi-telephone-fill"></i>
+          <span>(47) 3188-1702</span>
+        </div>
+
+        <div class="contato-item">
+          <i class="bi bi-map"></i>
+          <span>
+            R. Paulo Chapiewsky, 931 - Centenário, São Bento do Sul - SC, 89283-064
+          </span>
+        </div>
+
+        <div class="contato-item">
+          <i class="bi bi-envelope"></i>
+          <span>
+            matricula.sbs@ifc.edu.br
+          </span>
+        </div>
+
+      </div>
+
+   
+      <!-- REDES -->
+      <div class="col-lg-3">
+
+        <h2 class="footer-title1">
+          Redes Sociais
+        </h2>
+
+        <div class="social-icons">
+
+          <a href="https://www.instagram.com/ifc.oficial"><button type="button" class="ins"></button></a>
+
+          <a href="https://www.youtube.com/channel/UC4dJyN96JoKFElq0oTyKkgA"><button type="button" class="you"></button></a>
+
+          <a href="https://www.facebook.com/oficial.ifc"><button type="button" class="face"></button></a>
+          
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+
+      <span>
+        Instituto Federal Catarinense - Campus São Bento do Sul
+      </span>
+
+      <span>
+        Desenvolvido por ECO 2 - 2026
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+</section>
+<section></section>
+</body>
+</html>
